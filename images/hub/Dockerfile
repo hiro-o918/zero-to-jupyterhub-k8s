@@ -60,7 +60,7 @@ RUN apt-get update \
         # requirement for using a local sqlite database
         sqlite3 \
         tini \
- && rm -rf /var/lib/apt/lists/*
+&& rm -rf /var/lib/apt/lists/*
 
 # install wheels built in the build stage
 COPY requirements.txt /tmp/requirements.txt
